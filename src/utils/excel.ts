@@ -1,7 +1,7 @@
 // src/utils/excel.ts
 import * as fs from 'fs';
 import * as XLSX from 'xlsx';
-import { OrderData } from '@models/orderData';
+import { OrderData } from '@models/orderData.ts';
 
 type Row = (string | number | null)[];
 type HeaderMap = Map<string, number>;

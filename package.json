@@ -1,6 +1,7 @@
 {
   "name": "playwright-pom-simple",
   "version": "1.0.0",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "playwright test",
@@ -16,6 +17,8 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@types/node": "^24.6.2",
+    "@types/xlsx": "^0.0.35",
     "xlsx": "^0.18.5"
   }
 }

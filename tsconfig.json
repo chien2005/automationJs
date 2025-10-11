@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
     "baseUrl": "./src",
     "paths": {
       "@pages/*": ["pages/*"],
@@ -12,7 +13,8 @@
       "@common/*": ["common/*"],
       "@data/*": ["data/*"]
     },
-    "types": ["node", "playwright"],
+
+    "types": ["node", "@playwright/test"],
     "allowJs": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -20,8 +22,15 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "outDir": "dist",
-    "noEmit": true
+
+    "noEmit": false,                       // test không build ra file
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    // Nếu bạn thật sự cần .d.ts: bật 2 dòng dưới và đổi noEmit:false
+    // "declaration": true,
+    // "emitDeclarationOnly": true,
+    // "outDir": "dist"
   },
-  "include": ["playwright.config.ts", "src"]
+  "include": ["src", "playwright.config.ts", "scripts", "global.d.ts"]
 }

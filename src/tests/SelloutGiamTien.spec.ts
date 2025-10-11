@@ -2,10 +2,10 @@ import { test, Page } from '@playwright/test';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-import cfg from '@utils/config';
-import { OrderPage } from '@pages/OrderPage';
-import LoginPage from '@pages/LoginPage';
-import { OrderRunner } from '@runner/OrderRunner';
+import cfg from '@utils/config.ts';
+import { OrderPage } from '@pages/OrderPage.ts';
+import { LoginPage } from '../pages/LoginPage.ts';
+import { OrderRunner } from '@runner/OrderRunner.ts';
 
 test.describe('SellOut - Áp CTKM - Giảm tiền', () => {
   test('runGiamTien', async ({ page }: { page: Page }) => {
