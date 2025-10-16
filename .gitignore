@@ -1,0 +1,12 @@
+# Playwright & Node (generated stuff)
+playwright-report/
+test-results/
+node_modules/
+automationJs/
+
+# Logs, OS & IDE
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
