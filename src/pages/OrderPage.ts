@@ -1,7 +1,7 @@
 import { expect, Page, Locator } from '@playwright/test';
-import { BasePage } from '@common/BasePage';
-import { DynamicOrderLocator as L } from '@pages/dynamicOrderLocator';
-import { OrderData } from '@models/orderData';
+import { BasePage } from '@common/BasePage.ts';
+import { DynamicOrderLocator as L } from '@pages/dynamicOrderLocator.ts';
+import { OrderData } from '@models/orderData.ts';
 
 type LoginFn = () => Promise<void>;
 
